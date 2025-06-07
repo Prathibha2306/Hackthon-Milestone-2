@@ -1,0 +1,123 @@
+/* src/styles/AdminPanel.css */
+
+/* === Container === */
+.admin-panel-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    margin: auto;
+}
+
+/* === Title === */
+.admin-panel-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f2937; /* dark gray */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* === Add Scheme Section === */
+.add-scheme-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+/* === Form Wrapper === */
+.add-scheme-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f3f4f6;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+}
+
+/* === Form Group === */
+.add-scheme-form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.add-scheme-form-group input,
+.add-scheme-form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.add-scheme-form-group input:focus,
+.add-scheme-form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+    outline: none;
+}
+
+/* === Button & Actions === */
+.add-scheme-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.add-scheme-submit-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.add-scheme-submit-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.add-scheme-submit-button:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* === Info Text === */
+.admin-panel-info {
+    color: #6b7280;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* === Responsive Enhancements === */
+@media (max-width: 640px) {
+    .admin-panel-container {
+        padding: 1rem;
+    }
+
+    .add-scheme-form {
+        padding: 1rem;
+    }
+
+    .add-scheme-form-actions {
+        justify-content: center;
+    }
+
+    .add-scheme-submit-button {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,70 @@
+/* src/styles/ApplicationStatus.css */
+.application-status-card {
+    background-color: #ffffff;
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    margin-top: 1.5rem; /* mt-6 */
+    border: 1px solid #d1fae5; /* border border-green-200 */
+}
+
+.application-status-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #111827; /* text-gray-900 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.application-status-empty {
+    color: #4b5563; /* text-gray-600 */
+}
+
+.application-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* space-y-4 */
+}
+
+.application-item {
+    background-color: #f3f4f6; /* bg-gray-100 */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    border: 1px solid #e5e7eb; /* border border-gray-200 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.application-item-details .scheme-name {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    color: #1d4ed8; /* text-blue-700 */
+}
+
+.application-item-details .applied-date {
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* text-gray-600 */
+}
+
+.application-status-badge {
+    padding: 0.25rem 0.75rem; /* px-3 py-1 */
+    border-radius: 9999px; /* rounded-full */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 700; /* font-bold */
+}
+
+.status-pending {
+    background-color: #fef3c7; /* bg-yellow-200 */
+    color: #92400e; /* text-yellow-800 */
+}
+
+.status-approved {
+    background-color: #d1fae5; /* bg-green-200 */
+    color: #065f46; /* text-green-800 */
+}
+
+.status-rejected {
+    background-color: #fee2e2; /* bg-red-200 */
+    color: #b91c1c; /* text-red-800 */
+}

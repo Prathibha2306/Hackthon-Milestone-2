@@ -1,0 +1,24 @@
+/* src/index.css */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Using a common sans-serif font */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Basic resets for form elements */
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
